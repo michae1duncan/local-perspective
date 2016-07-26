@@ -19,7 +19,8 @@ define({
     //Default configuration settings for the application. This is where you'll define things like a bing maps key,
     //default web map, default app color theme and more. These values can be overwritten by template configuration settings and url parameters.
     "appid": "",
-    "webmap": "9569a8b938c746359c1b4aa490476506", //"4ab11e3ebab04de6b04c42bbc102d3c0",
+    //"webmap": "9569a8b938c746359c1b4aa490476506", //"4ab11e3ebab04de6b04c42bbc102d3c0",
+    "webmap": "15fc776f45d143a298661ffb973c3964",
     "oauthappid": null, //"AFTKRmv16wj14N3z",
     //Group templates must support a group url parameter. This will contain the id of the group.
     //group: "",
@@ -39,16 +40,18 @@ define({
     //to show how to setup the strings file.
     "localize": true,
     "units": null,
-    
+
     // **************************** //
     // ** UI SPECIFIC PARAMETERS ** //
     "cycleColors": true,
     "color": "#80ab00",
-    "colors": ["#0071ab", "#27a4d2", "#886197", "#8a2581", "#fc0055", "#c50143", "#db0111", "#ec5b02", "#efa602", "#dab900", "#80ab00", "#548901", "#049686", "#097096"],
+    "colors": [
+      "#0071ab", "#028D6A", "#886197", "#097096", "#ec5b02", "#c50143", "#db0111",
+      "#fc0055", "#efa602", "#dab900", "#80ab00", "#548901", "#049686", "#097096"],
     "logo" : "images/logo.png",
     "title": "Local Perspective",
     // **************************** //
-    
+
     // **************************** //
     // ** LOCAL PERSPECTIVE PARAMETERS **//
     "showDemographics": true,
@@ -68,7 +71,7 @@ define({
     "weatherLayerURL_Tiled" : "https://gisserver.accuweather.com/ESRITileServices2/tileRequest/AccuTileServices/LatestUSHiResRadar/N1dvRW9KUjNNK2tYWFp4Y1h6M2lCa2ZTRW5wMWJzeXdaamxIY3ZkRmcxVCs1YXdPaE1MckpBPT0=/MapServer/tile/{level}/{row}/{col}",
     "weatherLayerURL_WMS" : location.protocol + "//mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi?SERVICE=WMS", // URL for WMS weather layer.
     "weatherUnits": "F", // options: F or C
-    "showDirections": false,
+    "showDirections": true,
     "directionsLabel": "Directions",
     "directionsURL": null,
     "distanceUnits": "miles", // options: miles or kilometers
@@ -77,12 +80,12 @@ define({
     "defaultZoomLevel": 14,
     "defaultToCenter": true,
     // **************************** //
-    
+
     // **************************** //
     // ** UTILITY PARAMETERS     ** //
     "routeUtility" : "",
     // **************************** //
-    
+
     //This option demonstrates how to handle additional custom url parameters. For example
     //if you want users to be able to specify lat/lon coordinates that define the map's center or
     //specify an alternate basemap via a url parameter.
